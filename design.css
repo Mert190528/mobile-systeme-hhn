@@ -4,11 +4,11 @@
     background: #898a8c;
 }
 
-.btn btn-default btn-lg dropdown-toggle {
+.btn  {
     margin: 25% 0%;
 }
 
-.navbar-brand navbar-right {
+.navbar-brand {
     height: 100%;
 }
 
@@ -16,11 +16,11 @@
     height:100%;
 }
 
-.index{
-   background: #cdcdcd;
-}
-
-#map {
+.map {
   height: 400px;
-  width: 100%;
+  width: 50%;
  }
+
+body{
+    background: #cdcdcd;
+}

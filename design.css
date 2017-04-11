@@ -27,3 +27,16 @@
 body{
     background: #cdcdcd;
 }
+
+.standorte {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background: #dddddd;
+}
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -3,3 +3,19 @@
     border: 1px;
     background: #898a8c;
 }
+
+.btn btn-default btn-lg dropdown-toggle {
+    margin: 25% 0%;
+}
+
+.navbar-brand navbar-right {
+    height: 100%;
+}
+
+.logo {
+    height:100%;
+}
+
+.index{
+   background: #cdcdcd;
+}

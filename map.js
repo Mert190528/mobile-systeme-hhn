@@ -1,20 +1,29 @@
 /**
  * Created by Valmir on 11.04.2017.
  */
+var myLatlng = new google.maps.LatLng(49.12259,9.210834999999975);
+var marker;
+
 function initMap() {
-  var uluru = {lat: 49.12259, lng: 9.210834999999975};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
-    center: uluru
+    center: {lat: 49.12259, lng: 9.210834999999975}
   });
-  var HHN_eins = {lat: 49.27555220000001, lng: 9.71216359999994};
-  var marker = new google.maps.Marker({
-      position: HHN_eins,
-      map:map,
-  })
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
+//Marker fällt auf Ziel!
+  marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: {lat: 49.12259, lng: 9.210834999999975}
   });
+  marker.addListener('click', toggleBounce);
+}
+// damit der Marker springt
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
 

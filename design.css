@@ -29,7 +29,6 @@ body{
 }
 
 .standorte {
-    text-align: center;
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
@@ -39,7 +38,26 @@ body{
     margin-right: auto;
 }
 
+th {
+    text-align: center;
+    font-size: large;
+
+}
+
 table.center{
     margin-left: auto;
     margin-right: auto;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.example2 .navbar-brand>img {
+  padding: 7px 15px;
 }

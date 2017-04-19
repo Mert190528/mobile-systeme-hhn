@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+
     <link href="design.css" type="text/css" rel="stylesheet"/>
 
 </head>
@@ -25,10 +28,11 @@
         <div class="btn-group">
             <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                Menu<span class="caret"></span>
+                Menu <span class="caret"></span>
             </button>
+
             <ul class="dropdown-menu">
-                ...
+                <li><a href="index.html">Startseite</a></li>
             </ul>
         </div>
         <a class="navbar-brand navbar-right" href="#">
@@ -42,7 +46,9 @@
 </script>
 <div class="standorte">
     <table id="tabelle" class="center">
-        <tr><th>Standorte</th></tr>
+        <tr>
+            <th>Standorte</th>
+        </tr>
         <tr>
             <td><a onclick="hhnsontheim()" href="javascript:avoid(0)">Campus Heilbronn: Sontheim</a></td>
         </tr>

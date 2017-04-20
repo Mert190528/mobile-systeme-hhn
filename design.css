@@ -58,6 +58,14 @@ table.center{
   width: auto;
 }
 
+.test {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
 .example2 .navbar-brand>img {
   padding: 7px 15px;
 }

@@ -22,16 +22,16 @@
     <link href="design.css" type="text/css" rel="stylesheet"/>
 
 </head>
-<body>
+<body onresize="rememberCenter()">
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="btn-group">
             <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                Menu <span class="caret"></span>
+                <span class="hidden-xs">Menu <span class="caret"></span></span>
+                <span class="glyphicon glyphicon-menu-hamburger visible-xs-block" aria-hidden="true"></span>
             </button>
-
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mydropdown">
                 <li><a href="index.html">Startseite</a></li>
             </ul>
         </div>

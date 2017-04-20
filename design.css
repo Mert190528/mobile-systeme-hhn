@@ -61,3 +61,7 @@ table.center{
 .example2 .navbar-brand>img {
   padding: 7px 15px;
 }
+
+.mydropdown {
+    margin: -25% 0%;
+}

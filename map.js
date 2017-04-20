@@ -1,9 +1,11 @@
 
 var myLatlng = new google.maps.LatLng(49.12259, 9.210834999999975);
 var marker;
+var map;
+window.addEventListener("resize", rememberCenter);
 //HHN Sontheim
 function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: {lat: 49.12259, lng: 9.210834999999975}
     });
@@ -19,7 +21,7 @@ function initMap() {
 }
 //HHN Sontheim
 function hhnsontheim() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: {lat: 49.12259, lng: 9.210834999999975}
 
@@ -43,7 +45,7 @@ function toggleBounce() {
 }
 //HHN Europacampus
 function campus() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: {lat: 49.148306, lng: 9.21648}
     });
@@ -66,7 +68,7 @@ function toggleBounce() {
 }
 //HHN Schwäbisch Hall
 function hhnsha() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 18,
         center: {lat: 49.112536, lng: 9.743618}
     });
@@ -89,7 +91,7 @@ function toggleBounce() {
 }
 //HHN Künzelsau
 function hhnkun() {
-    var map = new google.maps.Map(document.getElementById('map'), {
+     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
         center: {lat: 49.275552, lng: 9.712164}
     });
@@ -110,6 +112,9 @@ function toggleBounce() {
         marker.setAnimation(google.maps.Animation.BOUNCE);
     }
 }
-
+function rememberCenter() {
+    var currCenter = map.getCenter();
+    console.log('currCenter');
+}
 
 

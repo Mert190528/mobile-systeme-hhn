@@ -8,17 +8,9 @@
     margin: 25% 0%;
 }
 
-.navbar-brand {
-    height: 100%;
-}
-
-.logo {
-    height:100%;
-}
-
 .map {
-  height: 600px;
-  width: 75%;
+    height: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -26,6 +18,11 @@
 
 body{
     background: #cdcdcd;
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 .standorte {
@@ -33,7 +30,7 @@ body{
     padding-bottom: 12px;
     text-align: center;
     background: #dddddd;
-    width: 75%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -50,7 +47,8 @@ table.center{
 }
 
 .navbar-brand {
-  padding: 0px;
+    height: 100%;
+    padding: 0px;
 }
 .navbar-brand>img {
   height: 100%;
@@ -64,10 +62,6 @@ table.center{
 
 .row {
     height: 100%;
-}
-
-.example2 .navbar-brand>img {
-  padding: 7px 15px;
 }
 
 .mydropdown {

@@ -13,7 +13,7 @@ function initMap() {
     var mapCanvas = document.getElementById('map');
     var mapOptions = {
         center: location,
-        zoom: 17,
+        zoom: 18,
         panControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }

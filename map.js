@@ -7,7 +7,7 @@ $(function () {
 });
 
 function initMap() {
-// default: Heilbronn center
+    /* default: Heilbronn center */
     var location = new google.maps.LatLng(49.142598, 9.218245);
 
     var mapCanvas = document.getElementById('map');
@@ -17,8 +17,9 @@ function initMap() {
         panControl: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
+    /* Map wird generiert */
     map = new google.maps.Map(mapCanvas, mapOptions);
-
+    /* Marker wird gesetzt */
     marker = new google.maps.Marker({
         map: map,
         draggable: true,
@@ -29,13 +30,14 @@ function initMap() {
     google.maps.event.addDomListener(window, "resize", recenterMap);
 }
 
+/* Funktion zum Zentrieren des Markers, bei Skalierung des Fensters */
 function recenterMap() {
     var center = map.getCenter();
     google.maps.event.trigger(map, "resize");
     map.panTo(center);
 }
 
-//Standort Sontheim
+/* Standort Sontheim */
 function hhnsontheim() {
     var location = new google.maps.LatLng(49.12259, 9.210834999999975);
     marker.setPosition(location);
@@ -51,7 +53,7 @@ function hhnsontheim() {
 
 };
 
-//Standort Künzelsau
+/*Standort Künzelsau */
 function hhnkun() {
     var location = new google.maps.LatLng(49.275552, 9.712164);
     marker.setPosition(location);
@@ -68,7 +70,7 @@ function hhnkun() {
 };
 
 
-//Standort Schäbisch Hall
+/* Standort Schäbisch Hall */
 function hhnsha() {
     var location = new google.maps.LatLng(49.112536, 9.743618);
     marker.setPosition(location);
@@ -84,7 +86,7 @@ function hhnsha() {
 
 };
 
-//Standort Europaplatz
+/* Standort Europaplatz */
 function campus() {
     var location = new google.maps.LatLng(49.148306, 9.21648);
     marker.setPosition(location);
